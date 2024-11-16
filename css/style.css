@@ -1,0 +1,159 @@
+body {
+    background-color: #166875;
+    font-family: "Allison", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+
+}
+
+.container h1 {
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #63348d;
+    }
+    30% {
+        color: #ffeb96;
+    }
+    60% {
+        color: #0084ff;
+    }
+    75% {
+        color: #1bcc7f;
+    }
+    100% {
+        color: #63348d;
+    }
+}
+
+.button {
+    font-family: "Allison", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f5f0d0;
+    border: none;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;    
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.strawberry-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .strawberry {
+    width: 50px;
+    height: 50px;
+    background: url('/marisol-icons/strawberry.png') no-repeat center center / contain;
+    position: absolute;
+    animation: float 5s infinite;
+  }
+  
+  .strawberry:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .strawberry:nth-child(2) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 1s;
+  }
+  
+  .strawberry:nth-child(3) {
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s;
+  }
+  
+  .strawberry:nth-child(4) {
+    top: 70%;
+    left: 30%;
+    animation-delay: 3s;
+  }
+  
+  .strawberry:nth-child(5) {
+    top: 90%;
+    left: 60%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  
+  .strawberry-container {
+    position: relative;
+    height: 100px;
+  }
+  
+  .strawberry {
+    width: 80px;
+    height: 80px;
+    background: url('/marisol-icons/strawberry.png') no-repeat center center / contain;
+    position: absolute;
+    top: 0;
+    animation: float 5s infinite;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+
+@media (max-width: 768px) {
+
+    #bem-vinda-img {
+      width: 70%;
+    }
+
+    .container h1 {
+        font-size: 85px;
+    }
+  }

@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #166875; /* Azul céu */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: #FFD700; /* Amarelo ouro */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.sunflower-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.sunflower {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: moveSunflower 5s infinite;
+}
+
+.sunflower:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.sunflower:nth-child(2) {
+    top: 10%;
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.sunflower:nth-child(3) {
+    top: 70%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+.sunflower:nth-child(4) {
+    top: 70%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.quote-box {
+    margin-top: 20px;
+}
+
+.quote {
+    font-size: 1.5em;
+    color: #FFD700; /* Amarelo ouro */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes moveSunflower {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50px, -50px);
+    }
+    50% {
+        transform: translate(100px, 0);
+    }
+    75% {
+        transform: translate(50px, 50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .sunflower {
+        width: 50px;
+        height: 50px;
+    }
+
+    .quote {
+        font-size: 1.2em;
+    }
+}
