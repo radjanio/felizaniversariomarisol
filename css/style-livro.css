@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* AliceBlue */
+    font-family: 'Allison', cursive;
+}
+
+.book {
+    width: 60%;
+    height: 80%;
+    border: 1px solid #166875; /* SteelBlue */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    background-color: #fffaf0; /* FloralWhite */
+}
+
+.img-book {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fffaf0; /* FloralWhite */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.5s;
+}
+
+.page.active {
+    left: 0;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5f9ea0; /* CadetBlue */
+}
+
+@media (max-width: 768px) {
+    .book {
+        width: 90%;
+        height: 70%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 16px;
+        margin: 0 5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .book {
+        width: 100%;
+        height: 60%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 6px 12px;
+        margin: 0 3px;
+    }
+}
